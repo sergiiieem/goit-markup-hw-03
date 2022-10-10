@@ -61,8 +61,7 @@ img {
 
 .section {
     padding-top: 94px;
-    padding-bottom: 94px;;
-
+    padding-bottom: 94px;
 }
 
 
@@ -71,6 +70,9 @@ img {
 
 /*------------------------------------------------header------------------------------------*/
 .header {
+
+    padding-top: 32px;
+    padding-bottom: 32px;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: var(--line-color);
@@ -151,10 +153,13 @@ img {
 
 /*------------------------------------Main-index-------------------------------------*/
 .hero {
-    display: block;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--second-bgn-color);
+    text-align: center;
+
 }
-.title {    
+.title {   
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -169,6 +174,7 @@ img {
     display: inline-block;
     min-width: 216px;
     height: 50px;
+    margin-top: 30px;
 
     border: 1px solid transparent;
     border-radius: 4px;
@@ -232,7 +238,7 @@ img {
 .activity {
 }
 .section-title {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 
     font-size: 36px;
     line-height: 1.17;
@@ -286,6 +292,9 @@ img {
 
 /*------------------------------footer ----------------------------*/
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     background-color: var(--second-bgn-color);
 }
 .footer-logo {
@@ -302,11 +311,12 @@ img {
     color: var(--bgn-color);
 }
 .address {
+    margin-top: 20px;
 }
-.address-list {
+.address-list > li {
+    margin-top: 9px;
 }
-.list {
-}
+
 .map-link {
     font-size: 14px;
     line-height: 1.71;
@@ -347,11 +357,19 @@ img {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
+    gap: 8px;
 }
 .portfolio-button-item {
-
 }
+
 .portfolio-button {
+    display: inline-block;
+    min-width: 73px;
+    height: 38px;
+
+    border: 1px solid transparent;
+    border-radius: 4px;
+    
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -392,6 +410,24 @@ img {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--text-color);
+}
+
+.portfolio-item-second-part {
+    padding-left: 24px;
+    padding-bottom: 20px;
+
+
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: var(--border-color);
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--border-color);
+
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: var(--border-color);
 }
 
 
