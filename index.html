@@ -14,7 +14,7 @@
 <body>
     <!--верхня лінія-->
     <header class="header">
-        <div class="container">
+        <div class="container header-container">
             <nav class="header-nav">
                 <a class="header-logo link" href="./index.html">
                     <span class="logo-web">Web</span><span class="header-logo-studio">Studio </span> 
@@ -34,8 +34,8 @@
 
     <main>
         <!--(Шапка) Hero-->
-        <section class="hero"> 
-            <div class="container">
+        <section class="hero">
+            <div class="container section">            
                 <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
                 <button type="button" class="hero-button">Замовити послугу</button>
             </div>
@@ -43,7 +43,7 @@
         
         <!--Особливості-->
         <section class="feature-section">
-            <div class="container">
+            <div class="container section">
                 <h2 class="feature visually-hidden">Особлисвості</h2>
                 <ul class="feature-list list">
                     <li class="feature-link link"><h3 class="feature-title">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -75,7 +75,7 @@
 
         <!--Чим ми займаємося-->
         <section class="activity">
-            <div class="container">
+            <div class="container section">
                 <h2 class="section-title">Чим ми займаємося</h2>
                 <ul class="activity-list list">
                     <li class="activity-item"><img src="./images/img1.jpg" alt="зображення людини, яка друкує текст" width="370"></li>
@@ -87,28 +87,36 @@
 
         <!--(Наша команда) team-->
         <section class="section-team">
-            <div class="container">
-                <h2 class="section-title">Наша команда</h2>
+            <div class="container section">
+                <h2 class="section-title centered">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-items">
-                        <img src="./images/img_ihor.jpg" alt="фото Ігора Дем'яненко" width="270"> 
-                        <h3 class="team-members">Ігор Дем'яненко</h3>
-                        <p class="members-position">Product Designer</p>
+                        <div class="team-wrap">
+                            <img src="./images/img_ihor.jpg" alt="фото Ігора Дем'яненко" width="270"> 
+                            <h3 class="team-members">Ігор Дем'яненко</h3>
+                            <p class="members-position">Product Designer</p>
+                        </div>
                     </li>    
                     <li class="team-items">
-                        <img src="./images/img_olha.jpg" alt="фото Ольги Рєпіної" width="270"> 
-                        <h3 class="team-members">Ольга Рєпіна</h3>
-                        <p class="members-position">Frontend Developer</p>
+                        <div class="team-wrap">
+                            <img src="./images/img_olha.jpg" alt="фото Ольги Рєпіної" width="270"> 
+                            <h3 class="team-members">Ольга Рєпіна</h3>
+                            <p class="members-position">Frontend Developer</p>
+                        </div>
                     </li>   
                     <li class="team-items">
-                        <img src="./images/img_mykola.jpg" alt="фото Миколи Тарасова" width="270"> 
-                        <h3 class="team-members">Микола Тарасов</h3>
-                        <p class="members-position">Marketing</p>
+                        <div class="team-wrap">
+                            <img src="./images/img_mykola.jpg" alt="фото Миколи Тарасова" width="270"> 
+                            <h3 class="team-members">Микола Тарасов</h3>
+                            <p class="members-position">Marketing</p>
+                        </div>
                     </li>   
                     <li class="team-items">
-                        <img src="./images/img_mykhailo.jpg" alt="фото Михайла Єрмакова" width="270"> 
-                        <h3 class="team-members">Михайло Єрмаков</h3>
-                        <p class="members-position">UI Designer</p>
+                        <div class="team-wrap">
+                            <img src="./images/img_mykhailo.jpg" alt="фото Михайла Єрмакова" width="270"> 
+                            <h3 class="team-members">Михайло Єрмаков</h3>
+                            <p class="members-position">UI Designer</p>
+                        </div>
                     </li>             
                 </ul>
             </div>
