@@ -70,9 +70,6 @@ img {
 
 /*------------------------------------------------header------------------------------------*/
 .header {
-
-    padding-top: 32px;
-    padding-bottom: 32px;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: var(--line-color);
@@ -87,7 +84,6 @@ img {
 .header-nav {
     display: flex;
     align-items: center;
-
 
 }
 .header-logo {
@@ -106,14 +102,19 @@ img {
 }
 .header-list {
     display: flex;
+    gap: 50px;
     margin-left: 93px;
     width: 281px;
-    gap: 50px;
+
 }
 .header-item {
 }
 
 .header-link {
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -134,10 +135,9 @@ img {
     display: flex;
     align-items: center;
     margin-left: auto;
+    gap: 50px;
 }
-.header-contacts {
-    margin-left: 50px;
-
+.header-contacts {   
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -171,9 +171,8 @@ img {
 }
 
 .hero-button {
-    display: inline-block;
-    min-width: 216px;
-    height: 50px;
+    padding-bottom:10px ;
+    padding-top: 10px;
     margin-top: 30px;
 
     border: 1px solid transparent;
@@ -194,22 +193,24 @@ img {
     background-color: #188CE8;
 }
 
-.feature-section {
-
+.feature-section { 
+    padding-bottom: 47px;
 }
+
 .feature {
+    
 }
 .visually-hidden {
     position: absolute;
-      white-space: nowrap;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-      border: 0;
-      padding: 0;
-      clip: rect(0 0 0 0);
-      clip-path: inset(50%);
-      margin: -1px;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .feature-list {
@@ -222,7 +223,7 @@ img {
     width: calc((100% - 90px) / 4)
 }
 .feature-title {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 
     font-size: 14px;
     line-height: 1.14;
@@ -236,6 +237,7 @@ img {
     color: var(--text-color);
 }
 .activity {
+    padding-top: 47px;
 }
 .section-title {
     margin-bottom: 50px;
@@ -270,9 +272,13 @@ img {
     background-color: var(--bgn-color);
     width: calc((100% - 90px) / 4);
 }    
-.team-members {
+.team-members-position {
     padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
+
+}
+.team-members {
+    margin-bottom: 10px;
 
     font-weight: 500;
     font-size: 16px;
@@ -282,7 +288,6 @@ img {
     }
 
 .members-position {
-    padding-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
@@ -294,9 +299,9 @@ img {
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-
     background-color: var(--second-bgn-color);
 }
+
 .footer-logo {
     font-family: 'Raleway';
     font-weight: 700;
@@ -313,10 +318,10 @@ img {
 .address {
     margin-top: 20px;
 }
-.address-list > li {
+
+.address-list>li:not(:first-child) {
     margin-top: 9px;
 }
-
 .map-link {
     font-size: 14px;
     line-height: 1.71;
@@ -335,7 +340,6 @@ img {
     letter-spacing: 0.03em;
     color: var(--contacts-color);  
     font-style: normal;
-
 }
 
 .contacts:hover,
@@ -353,19 +357,23 @@ img {
 }
 .portfolio-title {
 }
+
 .projects-list {
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     gap: 8px;
 }
 .portfolio-button-item {
+
 }
 
 .portfolio-button {
     display: inline-block;
     min-width: 73px;
     height: 38px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 
     border: 1px solid transparent;
     border-radius: 4px;
@@ -378,7 +386,7 @@ img {
     letter-spacing: 0.03em;
     cursor: pointer;
     background-color:var(--bgn-section-color) ;
-    border-radius: 4px;
+   
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
@@ -397,8 +405,7 @@ img {
 
 }
 .portfolio-project-name {
-    padding-top: 20px;
-    padding-bottom: 4px;
+    margin-bottom: 4px;
 
     font-size: 18px;
     line-height: 2;
@@ -415,7 +422,8 @@ img {
 .portfolio-item-second-part {
     padding-left: 24px;
     padding-bottom: 20px;
-
+    padding-right: 24px;
+    padding-top: 20px;
 
     border-right-width: 1px;
     border-right-style: solid;
