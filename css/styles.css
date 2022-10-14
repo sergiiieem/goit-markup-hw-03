@@ -66,8 +66,6 @@ img {
 
 
 
-
-
 /*------------------------------------------------header------------------------------------*/
 .header {
     border-bottom-width: 1px;
@@ -138,11 +136,16 @@ img {
     gap: 50px;
 }
 .header-contacts {   
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    
 }
   
 .header-contacts:hover,
@@ -171,9 +174,12 @@ img {
 }
 
 .hero-button {
-    padding-bottom:10px ;
     padding-top: 10px;
+    padding-bottom:10px ;
+    padding-right: 32px;
+    padding-left: 32px;
     margin-top: 30px;
+    
 
     border: 1px solid transparent;
     border-radius: 4px;
@@ -368,14 +374,14 @@ img {
 
 }
 
-.portfolio-button {
-    display: inline-block;
-    min-width: 73px;
-    height: 38px;
+.portfolio-button {    
+    min-width: 73px;  
     padding-top: 6px;
+    padding-right: 22px;
     padding-bottom: 6px;
+    padding-left: 22px;
 
-    border: 1px solid transparent;
+    border-color: transparent;
     border-radius: 4px;
     
     font-family: inherit;
